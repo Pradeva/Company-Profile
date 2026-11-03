@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  --font-display: "Segoe UI", ui-sans-serif, system-ui, -apple-system, Roboto,
+    Helvetica, Arial, sans-serif;
+
+  /* Palet korporat: terang, bersih, aksen biru "kepercayaan". */
+  --bg: #ffffff;
+  --bg-muted: #f6f8fb; /* section abu sangat terang */
+  --bg-invert: #0b1b33; /* section gelap sebagai kontras (navy) */
+  --surface: #ffffff;
+  --border: #e5e9f0;
+  --text: #0f1b2d; /* slate gelap */
+  --text-muted: #5b6b82;
+  --text-invert: #eef3fb; /* teks di atas section gelap */
+  --text-invert-muted: #9fb3cf;
+  --accent: #2563eb; /* biru korporat */
+  --accent-strong: #1d4ed8;
+  --accent-soft: #eaf1ff; /* latar lembut untuk ikon/badge */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
